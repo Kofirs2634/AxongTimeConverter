@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeConverter</title>
+    <script src="jquery.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Конвертер дат</h1>
+    <div class="box">
+        <div class="toaxong">
+            <h2>Земля → Ахонг</h2>
+            <div class="input">
+                <div class="date">
+                    <select id="ta-day"></select>
+                    <select id="ta-month"></select>
+                    <input type="number" id="ta-year" min="0000" max="9999" placeholder="YYYY">
+                </div>
+                <div class="time">
+                    <input type="number" id="ta-hour" min="00" max="23" placeholder="HH">:<input type="number" id="ta-minute" min="00" max="59" placeholder="MM">:<input type="number" id="ta-second" min="00" max="59" placeholder="SS">
+                </div>
+                <label class="time-check">Время ннада? <input type="checkbox" id="ta-time"></label>
+                <button id="ta-go">Перевести</button>
+            </div>
+        </div>
+        <div class="toearth">
+            <h2>Ахонг → Земля</h2>
+            <div class="input">
+                <div class="date">
+                    <select id="te-day"></select>
+                    <select id="te-month"></select>
+                    <input type="number" id="te-year" min="-9999" max="9999" placeholder="YYYY">
+                </div>
+                <div class="time">
+                    <input type="number" id="te-hour" min="0" max="9" placeholder="HH">:<input type="number" id="te-minute" min="00" max="99" placeholder="MM">:<input type="number" id="te-second" min="00" max="99" placeholder="SS">
+                </div>
+                <label class="time-check">Время ннада? <input type="checkbox" id="te-time"></label>
+                <button id="te-go">Перевести</button>
+            </div>
+        </div>
+    </div>
+    <h1>Результат перевода</h1>
+    <div id="output"><i>ваша временная отметка появится здесь</i></div>
+    <div class="attr">Посчитал и оформил <a href="https://axong.fandom.com/ru/wiki/User:Kofirs2634">Kofirs2634</a> в 2021 году. <a href="https://axong.fandom.com/ru/wiki/Project:Космическое">Что это?</a></div>
+</body>
+</html>

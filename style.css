@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@0;1&display=swap');
+body {
+    font-family: 'Ubuntu Mono', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+.time, button {
+    display: block
+}
+.box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+select, button, input[type="number"] {
+    font-family: 'Ubuntu Mono', sans-serif;
+}
+#output {
+    text-align: center;
+    font-size: 24px;
+}
+.attr {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+a { color: #00E }
